@@ -14,8 +14,8 @@ npm run start
 
 ## Captures
 
-<!-- ![GitHub Logo](./public/screens.png) -->
+![GitHub Logo](./public/screens.png)
 
 ## Live demo
-<!-- 
-[here you can try the app](https://gifted-heyrovsky-4a6715.netlify.app/) -->
+
+[here you can try the app](https://affectionate-jang-155eac.netlify.app/)
