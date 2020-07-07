@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled'
+
 const ContentPhrase = styled.div`
-    padding: 3rem;
+    padding: 2rem;
     border-radius: .1rem;
     background-color: transparent;
-    max-width:800px;
+    max-width:30rem;
     border:solid 2px black;    
     @media (min-width: 992px) {
-        margin-top: 10rem;
+        margin-top: 14rem;
     }
-    h1 {
+    h2 {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         position: relative;
@@ -17,7 +18,7 @@ const ContentPhrase = styled.div`
         color:white;
         &::before {
             content: open-quote;
-            font-size: 10rem;
+            font-size: 8rem;
             color: white;
             position: absolute;
             left: -1rem;
@@ -26,8 +27,9 @@ const ContentPhrase = styled.div`
     }
     p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.4rem;
-        font-weight:bold;
+        font-size: 1rem;
+        font-weight:lighter;
+        font-style:italic;
         text-align: right;
         color: white;
         margin-top: 2rem;
@@ -36,7 +38,7 @@ const ContentPhrase = styled.div`
 const Phrase = ({ phrases }) => {
     return (
         <ContentPhrase>
-            <h1>{phrases.quote}</h1>
+            <h2>{phrases.quote}</h2>
             <p>{phrases.author}</p>
         </ContentPhrase>
     );

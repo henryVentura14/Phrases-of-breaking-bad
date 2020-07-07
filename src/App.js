@@ -19,24 +19,33 @@ const Button = styled.button`
   background-size: 300px;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  margin-top: 3rem;
-  padding: 1rem 3rem;
-  font-size: 2rem;
+  width:8rem;
+  margin-top:2rem;
+  padding: 2;
+  font-size: 1.2em;
   border: 2px solid black;
   transition: background-size 0.8s ease;
+  height:4rem;
   :hover {
     cursor: pointer;
     background-size: 400px;
   }
 `
+
+const ContentButton = styled.div`
+  width:20rem;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-content:center;
+  align-items:center;
+`;
 // styled components <==//
 
 // ==> function audio
 const useAudio = url => {
   const [audio] = useState(
-    new Audio(
-      'https://www.mboxdrive.com/breaking-bad.mp3'
-    )
+    new Audio('https://www.mboxdrive.com/breaking-bad.mp3')
   )
   const [playing, setPlaying] = useState(false)
 
@@ -79,8 +88,10 @@ const App = url => {
   return (
     <Content>
       <Phrase phrases={phrases} />
-      <Button onClick={fetchAPI}>Get Phrase</Button>
-      <Button onClick={toggle}>{playing ? 'Pause' : 'Play'}</Button>
+      <ContentButton>
+        <Button onClick={fetchAPI}>Get Phrase</Button>
+        <Button onClick={toggle}>{playing ? 'Pause' : 'Play'}</Button>
+      </ContentButton>
     </Content>
   )
 }

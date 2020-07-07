@@ -18,4 +18,4 @@ npm run start
 
 ## Live demo
 
-[here you can try the app](https://affectionate-jang-155eac.netlify.app/)
+[here you can try the app](https://affectionate-sinoussi-6cc07c.netlify.app/)
