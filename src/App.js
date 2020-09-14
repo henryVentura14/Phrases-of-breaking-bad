@@ -45,7 +45,7 @@ const ContentButton = styled.div`
 // ==> function audio
 const useAudio = url => {
   const [audio] = useState(
-    new Audio('https://www.4shared.com/mp3/eTaoaQ0diq/breaking-bad-intro.html')
+    new Audio('https://media1.vocaroo.com/mp3/1oDk9AL55PgV')
   )
   const [playing, setPlaying] = useState(false)
 
